@@ -1,0 +1,75 @@
+{
+  "process": {
+    "name": "control_calidad_cuentas_google_ads",
+    "execution_mode": "manual",
+    "version": "3.1"
+  },
+
+  "paths": {
+    "input": "input/input.csv",
+    "input_processed": "input/procesados/",
+    "output": "output/",
+    "logs": "logs/"
+  },
+
+  "controls": {
+    "controls_to_process": [1, 2, 5]
+  },
+
+  "input": {
+    "mode": "csv",
+
+    "csv": {
+      "path": "input/input.csv",
+      "required_columns": ["customer_id"]
+    },
+
+    "sqlserver": {
+      "enabled": true,
+      "query": "SELECT ID_CUENTA AS customer_id FROM [Jot_keyword_stats].[dbo].[CUENTAS_SNAPSHOT] WHERE ID_ESTADO = 1 AND ESMCC = '0'"
+    },
+
+    "max_rows": 5000,
+    "deduplicate": true
+  },
+
+  "output": {
+    "generate_csv_summary": true,
+    "generate_csv_detail": true,
+    "csv_separator": ";",
+    "include_run_id": false,
+    "include_execution_user": true
+  },
+
+  "logging": {
+    "log_level": "INFO",
+    "log_user": true,
+    "log_account_summary": false
+  },
+
+  "sql": {
+    "environment": "PROD"
+  },
+
+  "sql_output": {
+    "enabled": false,
+    "execution_table": "PROCESS_EXECUTION",
+    "account_run_table": "ACCOUNT_RUN"
+  },
+  
+  "google_ads": {
+    "use_api": true,
+    "customer_level": true
+  },
+
+  "resume": {
+    "enabled": true,
+    "run_id": null,
+    "state_dir": "checkpoints",
+    "checkpoint_file": "checkpoint_{run_id}.csv"
+  },
+
+  "jot_lib": {
+    "jotlib_path": ""
+  }
+}

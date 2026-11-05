@@ -1,0 +1,52 @@
+[
+  {
+    "control_id": "1",
+    "control_name": "Nomenclatura de la cuenta",
+    "control_script": "controls/nombre_cuenta_v3.py"
+  },
+  {
+    "control_id": "2",
+    "control_name": "Linea de negocio",
+    "control_script": "controls/linea_negocio_v1.py"
+  },
+  {
+    "control_id": "3",
+    "control_name": "Zona horaria",
+    "control_script": "controls/zona_horaria_v1.py"
+  },
+  {
+    "control_id": "4",
+    "control_name": "Moneda",
+    "control_script": "controls/moneda_v1.py"
+  },
+  {
+    "control_id": "5",
+    "control_name": "Tracking template",
+    "control_script": "controls/tracking_template_v6.py"
+  },
+  {
+    "control_id": "6",
+    "control_name": "Final URL suffix",
+    "control_script": "controls/url_suffix_v1.py"
+  },
+  {
+    "control_id": "7",
+    "control_name": "Auto-tagging",
+    "control_script": "controls/auto-tagging_v1.py"
+  },
+  {
+    "control_id": "8",
+    "control_name": "Content suitability - Parked Domains excluidos",
+    "control_script": "controls/suitability_parkedDomains_v1.py"
+  },
+  {
+    "control_id": "9",
+    "control_name": "Content suitability - Placements/sitios excluidos",
+    "control_script": "controls/suitability_placements_v1.py"
+  },
+  {
+    "control_id": "10",
+    "control_name": "Cuenta de facturación",
+    "control_script": "controls/facturacion_v2.py"
+  }
+]

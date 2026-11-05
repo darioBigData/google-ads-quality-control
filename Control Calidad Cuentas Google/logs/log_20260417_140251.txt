@@ -1,0 +1,10 @@
+[2026-04-17 14:02:51] [INFO] Inicio proceso | run_id=20260417_140251 | user=dario.panadero | host=JOTLAP0090
+[2026-04-17 14:02:51] [INFO] Active controls: 1, 2, 5
+[2026-04-17 14:02:53] [INFO] INPUT | mode=csv
+[2026-04-17 14:02:53] [INFO] INPUT | customer_ids_resolved=53
+[2026-04-17 14:02:53] [INFO] Cuentas a procesar: 53
+[2026-04-17 14:05:18] [INFO] Resumen ejecución | OK=0 | ERROR=53 | ERROR_TECNICO=0
+[2026-04-17 14:05:18] [INFO] Output resumen: output/resumen/output_resumen_ctas_20260417_140251.csv
+[2026-04-17 14:05:18] [INFO] Output detalle: output/errores/output_errores_ctas_20260417_140251.csv
+[2026-04-17 14:05:18] [INFO] Duración proceso: 0:02:27.371258
+[2026-04-17 14:05:18] [INFO] Fin proceso
