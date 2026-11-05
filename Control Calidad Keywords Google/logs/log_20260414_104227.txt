@@ -1,0 +1,14 @@
+2026-04-14 10:42:27,877 - INFO - Inicio proceso | run_id=20260414_104227 | user=dario.panadero
+2026-04-14 10:42:27,877 - INFO - Checkpoint file: checkpoints\checkpoint_20260414_104227.json
+2026-04-14 10:42:27,879 - ERROR - FATAL | [Errno 2] No such file or directory: 'C:\\Users\\dario.panadero\\OneDrive - Jot Internet Media España\\Automatizaciones\\Control Calidad Keywords Google\\src\\controls/kw_wrong_match.py'
+2026-04-14 10:42:27,882 - ERROR - Traceback (most recent call last):
+  File "C:\Users\dario.panadero\OneDrive - Jot Internet Media España\Automatizaciones\Control Calidad Keywords Google\src\main_v1.py", line 67, in main
+    controls = load_controls("config/controls.json")
+  File "C:\Users\dario.panadero\OneDrive - Jot Internet Media España\Automatizaciones\Control Calidad Keywords Google\src\core\control_loader.py", line 24, in load_controls
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 892, in get_code
+  File "<frozen importlib._bootstrap_external>", line 950, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\dario.panadero\\OneDrive - Jot Internet Media España\\Automatizaciones\\Control Calidad Keywords Google\\src\\controls/kw_wrong_match.py'
+

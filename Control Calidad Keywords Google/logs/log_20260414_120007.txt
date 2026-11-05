@@ -1,0 +1,21 @@
+2026-04-14 12:00:07,580 - INFO - Inicio proceso | run_id=20260414_120007 | user=dario.panadero
+2026-04-14 12:00:07,581 - INFO - Checkpoint file: checkpoints\checkpoint_20260414_120007.json
+2026-04-14 12:00:37,712 - ERROR - FATAL | ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error al buscar el servidor/instancia especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Ha finalizado el tiempo de espera de inicio de sesión (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Error relacionado con la red o específico de instancia al establecer conexión con el servidor SQL Server. El servidor no se encuentra o no está accesible. Compruebe si el nombre de la instancia es correcto y si SQL Server está configurado para permitir conexiones remotas. Para obtener más información, vea los Libros en pantalla de SQL Server. (-1)')
+2026-04-14 12:00:37,725 - ERROR - Traceback (most recent call last):
+  File "C:\Users\dario.panadero\OneDrive - Jot Internet Media España\Automatizaciones\Control Calidad Keywords Google\src\main_v1.py", line 72, in main
+    entities = build_contexts(config)
+  File "C:\Users\dario.panadero\OneDrive - Jot Internet Media España\Automatizaciones\Control Calidad Keywords Google\src\context\context_builder.py", line 23, in build_contexts
+    auth = GoogleAdsAuth(
+        module_path=os.path.join(jotlib_path, "jot", "jot_googleads")
+    )
+  File "C:\Users\dario.panadero\OneDrive - Jot Internet Media España\Archivos de Miguel Lopez Dalmau - Calidad y Operaciones\00. POLÍTICAS Y ENTORNOS DE TRABAJO\JOT_LIB Python\Codigo\jot_lib\jot\jot_googleads\auth.py", line 54, in __init__
+    self.sql = SqlServerJOT(self.conn_str)
+               ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dario.panadero\OneDrive - Jot Internet Media España\Archivos de Miguel Lopez Dalmau - Calidad y Operaciones\00. POLÍTICAS Y ENTORNOS DE TRABAJO\JOT_LIB Python\Codigo\jot_lib\jot\jot_sqlserver\jot_sqlserver.py", line 110, in __init__
+    self._connect()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\dario.panadero\OneDrive - Jot Internet Media España\Archivos de Miguel Lopez Dalmau - Calidad y Operaciones\00. POLÍTICAS Y ENTORNOS DE TRABAJO\JOT_LIB Python\Codigo\jot_lib\jot\jot_sqlserver\jot_sqlserver.py", line 139, in _connect
+    self.conn = pyodbc.connect(conn_string, autocommit=True)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error al buscar el servidor/instancia especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Ha finalizado el tiempo de espera de inicio de sesión (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Error relacionado con la red o específico de instancia al establecer conexión con el servidor SQL Server. El servidor no se encuentra o no está accesible. Compruebe si el nombre de la instancia es correcto y si SQL Server está configurado para permitir conexiones remotas. Para obtener más información, vea los Libros en pantalla de SQL Server. (-1)')
+

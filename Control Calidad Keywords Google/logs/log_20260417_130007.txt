@@ -1,0 +1,161 @@
+2026-04-17 13:00:07,793 - INFO - Inicio proceso | run_id=20260417_130007 | user=dario.panadero
+2026-04-17 13:00:07,793 - INFO - Checkpoint file: checkpoints\checkpoint_20260417_130007.json
+2026-04-17 13:00:12,396 - ERROR - FATAL | (<_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.INVALID_ARGUMENT
+	details = "Request contains an invalid argument."
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:142.251.209.106:443 {grpc_message:"Request contains an invalid argument.", grpc_status:3}"
+>, <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.INVALID_ARGUMENT
+	details = "Request contains an invalid argument."
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:142.251.209.106:443 {grpc_message:"Request contains an invalid argument.", grpc_status:3}"
+>, errors {
+  error_code {
+    query_error: UNEXPECTED_INPUT
+  }
+  message: "Error in query: unexpected input campaign_asset.resource_name."
+}
+request_id: "fhjN3mKsdrtzh5zoX5PFlQ"
+, 'fhjN3mKsdrtzh5zoX5PFlQ')
+2026-04-17 13:00:12,425 - ERROR - Traceback (most recent call last):
+  File "C:\Users\dario.panadero\OneDrive - Jot Internet Media España\Automatizaciones\Control Calidad Keywords Google\src\main_v2.py", line 85, in main
+    entities = build_contexts(config)
+  File "C:\Users\dario.panadero\OneDrive - Jot Internet Media España\Automatizaciones\Control Calidad Keywords Google\src\context\context_builder.py", line 57, in build_contexts
+    asset_entities, campaign_assets_count = get_assets(
+                                            ~~~~~~~~~~^
+        gaql,
+        ^^^^^
+        customer_id,
+        ^^^^^^^^^^^^
+        campaign_id
+        ^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\dario.panadero\OneDrive - Jot Internet Media España\Automatizaciones\Control Calidad Keywords Google\src\context\data\asset_data.py", line 35, in get_assets
+    rows = list(gaql.query(customer_id=customer_id, sql=query))
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dario.panadero\OneDrive - Jot Internet Media España\Archivos de Miguel Lopez Dalmau - Calidad y Operaciones\00. POLÍTICAS Y ENTORNOS DE TRABAJO\JOT_LIB Python\Codigo\jot_lib\jot\jot_googleads\services\gaql.py", line 71, in query
+    response = self.ga_service.search(
+        customer_id=str(customer_id),
+        query=sql
+    )
+  File "C:\Users\dario.panadero\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\ads\googleads\v22\services\services\google_ads_service\client.py", line 4614, in search
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "C:\Users\dario.panadero\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\dario.panadero\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\api_core\grpc_helpers.py", line 75, in error_remapped_callable
+    return callable_(*args, **kwargs)
+  File "C:\Users\dario.panadero\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\grpc\_interceptor.py", line 276, in __call__
+    response, ignored_call = self._with_call(
+                             ~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\dario.panadero\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\grpc\_interceptor.py", line 331, in _with_call
+    return call.result(), call
+           ~~~~~~~~~~~^^
+  File "C:\Users\dario.panadero\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\grpc\_interceptor.py", line 170, in result
+    raise self._exception
+  File "C:\Users\dario.panadero\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\grpc\_interceptor.py", line 314, in continuation
+    response, call = self._thunk(new_method).with_call(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=new_compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\dario.panadero\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\grpc\_interceptor.py", line 342, in with_call
+    return self._with_call(
+           ~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\dario.panadero\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\grpc\_interceptor.py", line 331, in _with_call
+    return call.result(), call
+           ~~~~~~~~~~~^^
+  File "C:\Users\dario.panadero\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\grpc\_interceptor.py", line 170, in result
+    raise self._exception
+  File "C:\Users\dario.panadero\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\grpc\_interceptor.py", line 314, in continuation
+    response, call = self._thunk(new_method).with_call(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=new_compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\dario.panadero\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\grpc\_interceptor.py", line 342, in with_call
+    return self._with_call(
+           ~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\dario.panadero\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\grpc\_interceptor.py", line 331, in _with_call
+    return call.result(), call
+           ~~~~~~~~~~~^^
+  File "C:\Users\dario.panadero\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\grpc\_interceptor.py", line 170, in result
+    raise self._exception
+  File "C:\Users\dario.panadero\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\grpc\_interceptor.py", line 314, in continuation
+    response, call = self._thunk(new_method).with_call(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=new_compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\dario.panadero\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\grpc\_interceptor.py", line 342, in with_call
+    return self._with_call(
+           ~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\dario.panadero\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\grpc\_interceptor.py", line 328, in _with_call
+    call = self._interceptor.intercept_unary_unary(
+        continuation, client_call_details, request
+    )
+  File "C:\Users\dario.panadero\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\ads\googleads\interceptors\exception_interceptor.py", line 107, in intercept_unary_unary
+    self._handle_grpc_failure(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\dario.panadero\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\google\ads\googleads\interceptors\exception_interceptor.py", line 74, in _handle_grpc_failure
+    raise self._get_error_from_response(response)
+google.ads.googleads.errors.GoogleAdsException: (<_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.INVALID_ARGUMENT
+	details = "Request contains an invalid argument."
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:142.251.209.106:443 {grpc_message:"Request contains an invalid argument.", grpc_status:3}"
+>, <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.INVALID_ARGUMENT
+	details = "Request contains an invalid argument."
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:142.251.209.106:443 {grpc_message:"Request contains an invalid argument.", grpc_status:3}"
+>, errors {
+  error_code {
+    query_error: UNEXPECTED_INPUT
+  }
+  message: "Error in query: unexpected input campaign_asset.resource_name."
+}
+request_id: "fhjN3mKsdrtzh5zoX5PFlQ"
+, 'fhjN3mKsdrtzh5zoX5PFlQ')
+

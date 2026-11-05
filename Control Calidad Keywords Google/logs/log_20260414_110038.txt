@@ -1,0 +1,17 @@
+2026-04-14 11:00:38,069 - INFO - Inicio proceso | run_id=20260414_110038 | user=dario.panadero
+2026-04-14 11:00:38,069 - INFO - Checkpoint file: checkpoints\checkpoint_20260414_110038.json
+2026-04-14 11:00:58,681 - ERROR - FATAL | 'GAQLService' object has no attribute 'search'
+2026-04-14 11:00:58,685 - ERROR - Traceback (most recent call last):
+  File "C:\Users\dario.panadero\OneDrive - Jot Internet Media España\Automatizaciones\Control Calidad Keywords Google\src\main_v1.py", line 72, in main
+    entities = build_contexts(config)
+  File "C:\Users\dario.panadero\OneDrive - Jot Internet Media España\Automatizaciones\Control Calidad Keywords Google\src\context\context_builder.py", line 47, in build_contexts
+    keyword_entities = get_keywords(
+        gaql,
+    ...<2 lines>...
+        ad_group_id
+    )
+  File "C:\Users\dario.panadero\OneDrive - Jot Internet Media España\Automatizaciones\Control Calidad Keywords Google\src\context\data\keyword_data.py", line 24, in get_keywords
+    rows = gaql.search(customer_id=customer_id, query=query)
+           ^^^^^^^^^^^
+AttributeError: 'GAQLService' object has no attribute 'search'
+

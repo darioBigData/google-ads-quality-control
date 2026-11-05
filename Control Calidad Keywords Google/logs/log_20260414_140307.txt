@@ -1,0 +1,4 @@
+2026-04-14 14:03:07,115 - INFO - Inicio proceso | run_id=20260414_140307 | user=dario.panadero
+2026-04-14 14:03:07,116 - INFO - Checkpoint file: checkpoints\checkpoint_20260414_140307.json
+2026-04-14 14:03:11,651 - INFO - Total entidades a procesar: 37
+2026-04-14 14:03:11,689 - INFO - Proceso finalizado correctamente

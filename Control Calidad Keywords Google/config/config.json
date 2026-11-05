@@ -1,0 +1,54 @@
+{
+  "process": {
+    "name": "qc_googleads_entities",
+    "python_version_target": "3.11",
+    "max_rows": 10000, 
+    "run_id_reference": null
+  },
+
+  "paths": {
+    "jotlib_path": "",
+    "input_csv_path": "input/input.csv",
+    "output_dir": "output/",
+    "logs_dir": "logs",
+    "checkpoint_dir": "checkpoints"
+  },
+
+  "input": {
+    "mode": "csv",
+    "csv": {
+      "delimiter": ";",
+      "encoding": "utf-8",
+      "required_columns": ["customer_id"],
+      "allow_duplicates": false
+    }
+  },
+
+  "checkpoint": {
+    "enabled": true,
+    "delete_on_success": true
+  },
+
+  "output": {
+    "write_summary": true,
+    "write_detail_errors": true,
+    "filenames": {
+      "summary_prefix": "output_resumen_kw",
+      "detail_prefix": "output_errores_kw"
+    }
+  },
+
+  "logging": {
+    "level": "INFO"
+  },
+
+  "retries": {
+    "enabled": true,
+    "max_attempts": 3,
+    "base_delay_seconds": 2
+  },
+
+  "controls": {
+    "controls_to_process": [1, 2, 3, 4, 5]
+  }
+}

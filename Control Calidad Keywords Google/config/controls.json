@@ -1,0 +1,37 @@
+[
+  {
+    "control_id": "1",
+    "control_name": "Keywords Rechazadas",
+    "control_script": "controls/kw_rechazadas.py",
+    "entity_type": "keyword",
+    "scope": "entity"
+  },
+  {
+    "control_id": "2",
+    "control_name": "Sitelinks",
+    "control_script": "controls/sitelinks.py",
+    "entity_type": "sitelink",
+    "scope": "campaign"
+  },
+  {
+    "control_id": "3",
+    "control_name": "Callouts",
+    "control_script": "controls/callouts.py",
+    "entity_type": "callout",
+    "scope": "campaign"
+  },
+  {
+    "control_id": "4",
+    "control_name": "Snippets",
+    "control_script": "controls/snippets.py",
+    "entity_type": "snippet",
+    "scope": "campaign"
+  },
+  {
+    "control_id": "5",
+    "control_name": "Keywords Concordancia Correcta",
+    "control_script": "controls/kw_correct_match.py",
+    "entity_type": "keyword",
+    "scope": "entity"
+  }
+]

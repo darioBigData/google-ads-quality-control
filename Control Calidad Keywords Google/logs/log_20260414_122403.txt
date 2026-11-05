@@ -1,0 +1,17 @@
+2026-04-14 12:24:03,678 - INFO - Inicio proceso | run_id=20260414_122403 | user=dario.panadero
+2026-04-14 12:24:03,678 - INFO - Checkpoint file: checkpoints\checkpoint_20260414_122403.json
+2026-04-14 12:24:08,149 - ERROR - FATAL | 'dict' object has no attribute 'ad_group_criterion'
+2026-04-14 12:24:08,157 - ERROR - Traceback (most recent call last):
+  File "C:\Users\dario.panadero\OneDrive - Jot Internet Media España\Automatizaciones\Control Calidad Keywords Google\src\main_v1.py", line 72, in main
+    entities = build_contexts(config)
+  File "C:\Users\dario.panadero\OneDrive - Jot Internet Media España\Automatizaciones\Control Calidad Keywords Google\src\context\context_builder.py", line 47, in build_contexts
+    keyword_entities = get_keywords(
+        gaql,
+    ...<2 lines>...
+        ad_group_id
+    )
+  File "C:\Users\dario.panadero\OneDrive - Jot Internet Media España\Automatizaciones\Control Calidad Keywords Google\src\context\data\keyword_data.py", line 46, in get_keywords
+    resource_name = row.ad_group_criterion.resource_name
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'ad_group_criterion'
+

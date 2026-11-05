@@ -1,0 +1,16 @@
+2026-04-14 12:21:18,954 - INFO - Inicio proceso | run_id=20260414_122118 | user=dario.panadero
+2026-04-14 12:21:18,954 - INFO - Checkpoint file: checkpoints\checkpoint_20260414_122118.json
+2026-04-14 12:21:22,643 - ERROR - FATAL | GAQLService.query() got an unexpected keyword argument 'query'
+2026-04-14 12:21:22,645 - ERROR - Traceback (most recent call last):
+  File "C:\Users\dario.panadero\OneDrive - Jot Internet Media España\Automatizaciones\Control Calidad Keywords Google\src\main_v1.py", line 72, in main
+    entities = build_contexts(config)
+  File "C:\Users\dario.panadero\OneDrive - Jot Internet Media España\Automatizaciones\Control Calidad Keywords Google\src\context\context_builder.py", line 47, in build_contexts
+    keyword_entities = get_keywords(
+        gaql,
+    ...<2 lines>...
+        ad_group_id
+    )
+  File "C:\Users\dario.panadero\OneDrive - Jot Internet Media España\Automatizaciones\Control Calidad Keywords Google\src\context\data\keyword_data.py", line 26, in get_keywords
+    rows = gaql.query(customer_id=customer_id, query=query)
+TypeError: GAQLService.query() got an unexpected keyword argument 'query'
+

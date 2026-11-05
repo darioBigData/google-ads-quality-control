@@ -1,0 +1,17 @@
+2026-04-14 12:01:21,904 - INFO - Inicio proceso | run_id=20260414_120121 | user=dario.panadero
+2026-04-14 12:01:21,905 - INFO - Checkpoint file: checkpoints\checkpoint_20260414_120121.json
+2026-04-14 12:01:27,315 - INFO - Total entidades a procesar: 1235
+2026-04-14 12:01:28,731 - ERROR - FATAL | write_outputs() got an unexpected keyword argument 'error_rows'
+2026-04-14 12:01:28,732 - ERROR - Traceback (most recent call last):
+  File "C:\Users\dario.panadero\OneDrive - Jot Internet Media España\Automatizaciones\Control Calidad Keywords Google\src\main_v1.py", line 206, in main
+    write_outputs(
+    ~~~~~~~~~~~~~^
+        summary_rows=summary_rows,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        run_id=run_id
+        ^^^^^^^^^^^^^
+    )
+    ^
+TypeError: write_outputs() got an unexpected keyword argument 'error_rows'
+
