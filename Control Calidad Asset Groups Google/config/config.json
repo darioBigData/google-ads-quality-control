@@ -1,0 +1,70 @@
+{
+  "process": {
+    "name": "qc_googleads_asset_groups",
+    "python_version_target": "3.11",
+    "max_rows": 10000,
+    "run_id_reference": null
+  },
+
+  "paths": {
+    "jotlib_path": "",
+    "input_csv_path": "input/input.csv",
+    "output_dir": "output",
+    "logs_dir": "logs"
+  },
+
+  "input": {
+    "mode": "csv",
+    "csv": {
+      "delimiter": ";",
+      "encoding": "utf-8",
+      "required_columns": ["customer_id", "campaign_id"],
+      "allow_duplicates": false
+    }
+  },
+
+  "checkpoint": {
+    "enabled": true,
+    "checkpoint_key_mode": "customer_id+asset_group_id",
+    "use_previous_checkpoint": true,
+    "delete_on_success": true
+  },
+
+  "output": {
+    "write_summary": true,
+    "write_detail_errors": true,
+    "filenames": {
+      "summary_prefix": "output_resumen_ag",
+      "detail_prefix": "output_errores_ag"
+    }
+  },
+
+  "logging": {
+    "level": "INFO"
+  },
+
+  "retries": {
+    "enabled": true,
+    "max_attempts": 3,
+    "base_delay_seconds": 2
+  },
+  "controls": {
+    "controls_to_process": [
+      "AG001"
+    ],
+    "params": {
+      "headline_control": {
+        "min_headlines": 3,
+        "max_headlines": 15
+      },
+      "description_control": {
+        "min_descriptions": 2
+      },
+      "length_control": {
+        "headline_max_length": 30,
+        "long_headline_max_length": 90,
+        "description_max_length": 90
+      }
+    }
+  }
+}

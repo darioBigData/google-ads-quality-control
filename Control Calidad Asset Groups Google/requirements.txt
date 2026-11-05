@@ -1,0 +1,4 @@
+google-ads
+pyodbc
+protobuf
+python-dotenv

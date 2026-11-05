@@ -1,0 +1,10 @@
+[2026-03-17 09:47:51] [INFO] Inicio proceso | run_id=20260317_094751 | user=dario.panadero
+[2026-03-17 09:47:53] [INFO] Active controls: AG001, AG002, AG003, AG004, AG005, AG006, AG007
+[2026-03-17 09:47:53] [INFO] Filas CSV: 194
+[2026-03-17 09:50:58] [INFO] Nº Asset Groups procesados: 194
+[2026-03-17 09:50:58] [INFO] Nº resultados OK: 846
+[2026-03-17 09:50:58] [INFO] Nº resultados != OK: 512
+[2026-03-17 09:50:58] [INFO] Nº llamadas Google Ads: 402
+[2026-03-17 09:50:58] [INFO] Media llamadas por AG: 2.0722
+[2026-03-17 09:50:58] [INFO] Llamadas por minuto: 128.8668
+[2026-03-17 09:50:58] [INFO] Duración total (s): 187.17

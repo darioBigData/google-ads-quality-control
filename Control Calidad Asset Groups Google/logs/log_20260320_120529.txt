@@ -1,0 +1,3 @@
+[2026-03-20 12:05:29] [INFO] Inicio proceso | run_id=20260320_120529 | user=dario.panadero
+[2026-03-20 12:05:30] [INFO] Active controls: AG001, AG002, AG003, AG004, AG005, AG006, AG007
+[2026-03-20 12:05:30] [INFO] Filas CSV: 1373

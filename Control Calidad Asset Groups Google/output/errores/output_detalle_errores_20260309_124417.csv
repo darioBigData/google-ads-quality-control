@@ -1,0 +1,2 @@
+control_id;status;valor_esperado;valor_encontrado;detalle;error_tecnico;customer_id;campaign_id;campaign_name;asset_group_id;asset_group_name;customer_name;execution_user
+AG006;ERROR;10016;topic-GENERIC001_lang-EN_domain-ALL_format-1024x1024px.png;Imágenes con categoría incorrecta;;3685565645;23609217735;WWW_DE_00_M_Virtuelle-Assistenz-Vs-Traditionelle-Sekretariatsdienste-Vergleich(10016)_SLUG-OTHER_y2025m12d29_oo_PM_X#;6681960323;Virtuelle-Assistenz-Vs-Traditionelle-Sekretariatsdienste-Vergleich;WWW_HKD_369_M_A_PM_ACD_SEK_515;dario.panadero

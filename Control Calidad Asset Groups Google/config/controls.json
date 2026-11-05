@@ -1,0 +1,41 @@
+[
+  {
+    "control_id": "AG001",
+    "control_name": "Mínimo de elementos en el Asset Group",
+    "control_script": "controls/minimum_assets_v1.py",
+    "needs_assets": true
+  },
+  {
+    "control_id": "AG002",
+    "control_name": "URL final",
+    "control_script": "controls/final_url_domain_v1.py",
+    "needs_url": true
+  },
+  {
+    "control_id": "AG003",
+    "control_name": "Business Name",
+    "control_script": "controls/business_name_mapping_v1.py"
+  },
+  {
+    "control_id": "AG004",
+    "control_name": "Nombre del Asset Group",
+    "control_script": "controls/ag_name_vs_campaign_v1.py"
+  },
+  {
+    "control_id": "AG005",
+    "control_name": "Call To Action",
+    "control_script": "controls/cta_v1.py"
+  },
+  {
+    "control_id": "AG006",
+    "control_name": "Imágenes categóricas coherentes con Category ID",
+    "control_script": "controls/image_category_v1.py",
+    "needs_assets": true
+  },
+  {
+    "control_id": "AG007",
+    "control_name": "Logos Destino",
+    "control_script": "controls/logo_destino_v1.py",
+    "needs_assets": true
+  }
+]
