@@ -1,0 +1,14 @@
+[2026-03-18 10:58:09] [INFO] Inicio proceso | run_id=20260318_105809 | user=dario.panadero
+[2026-03-18 10:58:13] [INFO] GAQL inicializado correctamente
+[2026-03-18 10:58:13] [INFO] Checkpoint cargado: 0 ad groups ya procesados
+[2026-03-18 10:58:13] [INFO] Filas CSV: 2
+[2026-03-18 10:58:13] [INFO] Controles activos: ['1', '2', '3', '4']
+[2026-03-18 10:58:13] [ERROR] Fila sin customer_id → ignorada
+[2026-03-18 10:58:13] [ERROR] Fila sin customer_id → ignorada
+[2026-03-18 10:58:13] [INFO] Total Ad Groups a procesar: 0
+[2026-03-18 10:58:13] [INFO] No hay resultados para generar output
+[2026-03-18 10:58:13] [INFO] Nº Ad Groups procesados: 0
+[2026-03-18 10:58:13] [INFO] Nº resultados OK: 0
+[2026-03-18 10:58:13] [INFO] Nº resultados != OK: 0
+[2026-03-18 10:58:13] [INFO] Nº llamadas Google Ads: 0
+[2026-03-18 10:58:13] [INFO] Duración total (s): 3.92

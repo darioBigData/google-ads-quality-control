@@ -1,0 +1,14 @@
+[2026-03-18 12:13:41] [INFO] Inicio proceso | run_id=20260318_121341 | user=dario.panadero
+[2026-03-18 12:13:44] [INFO] GAQL inicializado correctamente
+[2026-03-18 12:13:44] [INFO] Checkpoint cargado: 0 ad groups ya procesados
+[2026-03-18 12:13:44] [INFO] Filas CSV: 2
+[2026-03-18 12:13:44] [INFO] Controles activos: ['2']
+[2026-03-18 12:13:44] [ERROR] Error construyendo contextos | customer=1138661780 | error='dict' object has no attribute 'ad_group'
+[2026-03-18 12:13:45] [ERROR] Error construyendo contextos | customer=1150477362 | error='dict' object has no attribute 'ad_group'
+[2026-03-18 12:13:45] [INFO] Total Ad Groups a procesar: 0
+[2026-03-18 12:13:45] [INFO] No hay resultados para generar output
+[2026-03-18 12:13:45] [INFO] Nº Ad Groups procesados: 0
+[2026-03-18 12:13:45] [INFO] Nº resultados OK: 0
+[2026-03-18 12:13:45] [INFO] Nº resultados != OK: 0
+[2026-03-18 12:13:45] [INFO] Nº llamadas Google Ads: 2
+[2026-03-18 12:13:45] [INFO] Duración total (s): 3.94

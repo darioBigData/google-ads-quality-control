@@ -1,0 +1,2 @@
+[2026-03-18 10:57:32] [INFO] Inicio proceso | run_id=20260318_105732 | user=dario.panadero
+[2026-03-18 10:57:32] [ERROR] Error inicializando GAQL: No module named 'jot'

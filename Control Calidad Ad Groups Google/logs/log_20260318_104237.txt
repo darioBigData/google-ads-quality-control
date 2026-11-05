@@ -1,0 +1,11 @@
+[2026-03-18 10:42:37] [INFO] Inicio proceso | run_id=20260318_104237 | user=dario.panadero
+[2026-03-18 10:42:37] [INFO] Checkpoint cargado: 0 ad groups ya procesados
+[2026-03-18 10:42:37] [INFO] Filas CSV: 2
+[2026-03-18 10:42:37] [INFO] Controles activos: ['1', '2', '3', '4']
+[2026-03-18 10:42:37] [INFO] Total Ad Groups a procesar: 0
+[2026-03-18 10:42:37] [INFO] No hay resultados para generar output
+[2026-03-18 10:42:37] [INFO] Nº Ad Groups procesados: 0
+[2026-03-18 10:42:37] [INFO] Nº resultados OK: 0
+[2026-03-18 10:42:37] [INFO] Nº resultados != OK: 0
+[2026-03-18 10:42:37] [INFO] Nº llamadas Google Ads: 0
+[2026-03-18 10:42:37] [INFO] Duración total (s): 0.02

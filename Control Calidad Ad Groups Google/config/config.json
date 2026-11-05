@@ -1,0 +1,38 @@
+{
+  "paths": {
+    "input": "input/input.csv",
+    "output_resumen": "output/resumen",
+    "output_errores": "output/errores",
+    "logs": "logs",
+    "resume": "checkpoints",
+    "jotlib_path": ""
+  },
+  "process": {
+    "run_id_reference": null,
+    "show_progress": true,
+    "progress_step_pct": 2
+  },
+  "checkpoint": {
+    "enabled": true,
+    "file_prefix": "checkpoint_",
+    "resume_on_run_id": true
+  },
+  "logging": {
+    "level": "normal",
+    "print_to_console": true
+  },
+  "debug": {
+    "enabled": false
+  },
+  "limits": {
+    "max_rows": null
+  },
+  "controls": {
+    "controls_to_process": [1, 3, 4],
+    "params": {
+      "naming_control": {
+        "regex": ".*"
+      }
+    }
+  }
+}

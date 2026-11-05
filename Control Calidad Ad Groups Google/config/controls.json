@@ -1,0 +1,22 @@
+[
+  {
+    "control_id": "1",
+    "control_name": "Ad Group Status",
+    "control_script": "controls/adgroup_status.py"
+  }, 
+  {
+    "control_id": "2",
+    "control_name": "Ad Group Type",
+    "control_script": "controls/adgroup_type.py"
+  },
+  {
+    "control_id": "3",
+    "control_name": "Ad Group Bid Modifier",
+    "control_script": "controls/adgroup_bidModifier.py"
+  }, 
+  {
+    "control_id": "4",
+    "control_name": "CPC_Max_AdGroup",
+    "control_script": "controls/adgroup_CPCMax.py"
+  }
+]
