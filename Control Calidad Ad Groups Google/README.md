@@ -243,21 +243,10 @@ Optimizado para:
 
 ---
 
-## 🔮 Futuras mejoras
-
-- integración completa con jot_lib
-- normalización de enums
-- control de interrupciones (CTRL+C)
-- parámetros dinámicos por control
-- logging avanzado
 📄 requirements.txt
 pandas
 
-👉 (aunque ahora mismo no lo usas intensamente, es coherente con tus otros QC)
 
-Si quieres ultra mínimo:
-
-# vacío (solo librerías estándar)
 📄 run.bat
 @echo off
 
