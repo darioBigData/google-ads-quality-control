@@ -1,0 +1,67 @@
+{
+  "paths": {
+    "jotlib_path": ""
+  },
+
+  "input_file": "input/input.csv",
+  "input_delimiter": ";",
+
+  "controls_file": "config/controls.json",
+
+  "log_folder": "logs",
+
+  "output": {
+    "resumen_folder": "output/resumen",
+    "errores_folder": "output/errores"
+  },
+  
+  "controls": {
+  "controls_to_process": [1, 2, 3]
+  },
+
+  "resume": {
+    "enabled": true,
+    "checkpoint_folder": "checkpoints/",
+    "checkpoint_prefix": "checkpoint_ads",
+    
+    "run_id_reference": null,
+    "delete_on_success": true
+  },
+
+  "log_level": "normal",
+  "register_user": true,
+
+  "limits": {
+    "max_rows_per_execution": 15000
+  },
+
+  "output_fields": {
+    "resumen": [
+      "execution_user",
+      "customer_id",
+      "campaign_id",
+      "ad_group_id",
+      "ad_id",
+      "campaign_name",
+      "ad_group_name",
+      "ad_type",
+      "status_global",
+      "total_controles",
+      "controles_error",
+      "error_tecnico"    ],
+    "errores": [
+      "execution_user",
+      "customer_id",
+      "campaign_id",
+      "ad_group_id",
+      "ad_id",
+      "campaign_name",
+      "ad_group_name",
+      "control_id",
+      "control_name",
+      "valor_esperado",
+      "valor_encontrado",
+      "detalle"
+    ]
+  }
+}

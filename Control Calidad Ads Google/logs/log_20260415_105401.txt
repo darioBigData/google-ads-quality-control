@@ -1,0 +1,14 @@
+[2026-04-15 10:54:01] [INFO] [RUN] Nuevo run_id generado: 20260415_105401
+[2026-04-15 10:54:01] [INFO] Inicio del proceso QC Ads.
+[2026-04-15 10:54:01] [INFO] Usuario de ejecución: dario.panadero
+[2026-04-15 10:54:01] [INFO] Run interno: 20260415_105401
+[2026-04-15 10:54:01] [INFO] Checkpoint activo: checkpoints/checkpoint_ads_20260415_105401.json
+[2026-04-15 10:54:01] [INFO] Ads ya procesados (checkpoint): 0
+[2026-04-15 10:54:01] [INFO] Filas leídas del input: 2
+[2026-04-15 10:54:02] [INFO] Controles activos: 3
+[2026-04-15 10:54:29] [INFO] Ads recuperados totales: 1583
+[2026-04-15 10:54:29] [INFO] Ads tras deduplicación: 1583
+[2026-04-15 10:54:32] [INFO] Ads procesados: 1583
+[2026-04-15 10:54:32] [INFO] Llamadas GAQL: 2
+[2026-04-15 10:54:32] [INFO] Checkpoint eliminado (proceso completo)
+[2026-04-15 10:54:32] [INFO] Proceso finalizado correctamente.

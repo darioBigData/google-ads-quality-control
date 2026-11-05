@@ -1,0 +1,19 @@
+[
+  {
+    "control_id": "1",
+    "control_name": "Ad Status",
+    "control_script": "controls/ad_status.py"
+  },
+
+  {
+    "control_id": "2",
+    "control_name": "Ad Type",
+    "control_script": "controls/ad_type.py"
+  },
+
+  {
+    "control_id": "3",
+    "control_name": "Ad Final URL",
+    "control_script": "controls/ad_final_url.py"
+  }
+]

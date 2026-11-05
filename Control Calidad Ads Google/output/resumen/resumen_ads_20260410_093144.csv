@@ -1,0 +1,4 @@
+﻿execution_user;customer_id;campaign_id;ad_group_id;ad_id;campaign_name;ad_group_name;ad_type;status_global;total_controles;controles_error;error_tecnico;checkpoint_status
+dario.panadero;6221954233;23732165711;197652884600;804291254771;ARG_ES_00_P_1-202508-ComputersConsumerElectronics_CTSG00_y2025m09w36_d1_S_A#C_1;ComputersConsumerElectronics_1;RESPONSIVE_SEARCH_AD;OK;3;0;;PROCESSED
+dario.panadero;6221954233;23732165711;197652884760;804291254765;ARG_ES_00_P_1-202508-ComputersConsumerElectronics_CTSG00_y2025m09w36_d1_S_A#C_1;Computers_1;RESPONSIVE_SEARCH_AD;OK;3;0;;PROCESSED
+dario.panadero;6221954233;23732165711;197652884800;804291254768;ARG_ES_00_P_1-202508-ComputersConsumerElectronics_CTSG00_y2025m09w36_d1_S_A#C_1;ConsumerElectronics_1;RESPONSIVE_SEARCH_AD;OK;3;0;;PROCESSED
